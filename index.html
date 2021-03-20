@@ -64,6 +64,33 @@ div.xxx{
     position: static;
     top: 50%;
 }
+/* second part*/
+ /*.circle
+{
+    background-color: chocolate;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}*/
+.triangle
+{
+width: 0px;
+height: 0px;
+border-top: 50px solid green;
+/*border-bottom: 50px solid yellow;*/
+border-left: 50px solid transprent;
+border-right: 50px solid  transparent;
+}
+p::after
+{
+    content: " I am inserted";
+}
+.profile:hover::before
+{
+    display: inline-block;
+    content: attr(data-youtube);
+}
+
 
 </style>
 </head>
@@ -83,5 +110,13 @@ div.xxx{
 <div class="xxx" id="ten">ten</div>
 <div class="xxx" id="eleven">eleven</div>
 <div class="xxx" id="twelvw">tewlve</div>
+ 
+  <div class="circle" id="xxx"></div>
+      <div class="triangle" ></div>
+      <p>Hello</p>
+      <div class="profile" data-name="Khushter_Nizame" 
+      data-youtube=" khushter creation "> profile
+      </div>
+
 </body>
 </html>
